@@ -1,4 +1,4 @@
-Drew Hays - Get your product identity from me.
+Sabbir Ahmed - Get your product identity from me.
 
 This is a personal portfolio html template made by codewithsadee
 
@@ -30,9 +30,9 @@ aria-label = open menu
 
 #---------- HERO ----------#
 
-alt = Drew Hays
+alt = Sabbir Ahmed
 
-Drew Hays
+Sabbir Ahmed
 
 Get Your Product Identity From Me.
 

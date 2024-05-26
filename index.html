@@ -764,13 +764,9 @@
 -->
 
 <section class="section project" aria-label="my latest projects" id="project">
-  <div class="slider-container">
-    <button class="slider-arrow slider-prev" aria-label="Previous Slide">
-      <ion-icon name="arrow-back" aria-hidden="true"></ion-icon>
-    </button>
-    
-    <ul class="slider-list">
-      <li class="slider-item">
+  <div class="carousel">
+    <div class="list slider-list">
+      <div class="slider-item">
         <div class="project-card text-center">
           <div class="card-banner img-holder has-before" style="--width: 1000; --height: 763;">
             <img src="./assets/images/project-1.jpg" width="1000" height="763" loading="lazy"
@@ -787,8 +783,8 @@
             </h3>
           </div>
         </div>
-      </li>
-      <li class="slider-item">
+      </div>
+      <div class="slider-item">
         <div class="project-card text-center">
           <div class="card-banner img-holder has-before" style="--width: 1000; --height: 763;">
             <img src="./assets/images/project-2.jpg" width="1000" height="763" loading="lazy"
@@ -805,8 +801,8 @@
             </h3>
           </div>
         </div>
-      </li>
-      <li class="slider-item">
+      </div>
+      <div class="slider-item">
         <div class="project-card text-center">
           <div class="card-banner img-holder has-before" style="--width: 1000; --height: 763;">
             <img src="./assets/images/project-3.jpg" width="1000" height="763" loading="lazy"
@@ -823,8 +819,8 @@
             </h3>
           </div>
         </div>
-      </li>
-      <li class="slider-item">
+      </div>
+      <div class="slider-item">
         <div class="project-card text-center">
           <div class="card-banner img-holder has-before" style="--width: 1000; --height: 763;">
             <img src="./assets/images/project-4.jpg" width="1000" height="763" loading="lazy"
@@ -841,8 +837,8 @@
             </h3>
           </div>
         </div>
-      </li>
-      <li class="slider-item">
+      </div>
+      <div class="slider-item">
         <div class="project-card text-center">
           <div class="card-banner img-holder has-before" style="--width: 1000; --height: 763;">
             <img src="./assets/images/project-5.jpg" width="1000" height="763" loading="lazy"
@@ -859,14 +855,16 @@
             </h3>
           </div>
         </div>
-      </li>
-    </ul>
-    
-    <button class="slider-arrow slider-next" aria-label="Next Slide">
-      <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-    </button>
+      </div>
+    </div>
+    <div class="arrows">
+      <button id="prev"><</button>
+      <button id="next">></button>
+    </div>
   </div>
 </section>
+
+<!-- <script src="app.js"></script> -->
 
 
 

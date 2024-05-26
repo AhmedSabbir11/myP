@@ -163,25 +163,4 @@ addEventOnElements(hoveredElements, "mouseout", function () {
 
 /** tab scoll before to next */
 
-document.addEventListener('DOMContentLoaded', function() {
-  const slider = document.querySelector('.carousel .list');
-  const nextButton = document.getElementById('next');
-  const prevButton = document.getElementById('prev');
-  const items = document.querySelectorAll('.carousel .list .slider-item');
-  
-  let currentIndex = 0;
 
-  function showSlider(index) {
-    slider.style.transform = `translateX(${-index * 100}%)`;
-  }
-
-  nextButton.addEventListener('click', () => {
-    currentIndex = (currentIndex + 1) % items.length;
-    showSlider(currentIndex);
-  });
-
-  prevButton.addEventListener('click', () => {
-    currentIndex = (currentIndex - 1 + items.length) % items.length;
-    showSlider(currentIndex);
-  });
-});

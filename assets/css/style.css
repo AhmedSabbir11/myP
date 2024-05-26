@@ -800,43 +800,21 @@ body.nav-active { overflow: hidden; }
 
 .project-card .card-title:is(:hover, :focus-visible) { background-size: 100% 1px; }
 
-/*-----------------------------------*\
-\*-----------------------------------*/
-
-.portfolio .slider { --item-gap: 16px; }
-
-.portfolio-card {
-  position: relative;
-  background-color: transparent;
-  transition: var(--cubic-ease-out);
+.slider-list {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  overflow: auto;
+  scroll-snap-type: inline mandatory;
+  padding-block-end: 5px;
 }
 
-.portfolio-card .img-cover { transition: var(--cubic-ease-out); }
+.slider-list::-webkit-scrollbar { display: none; }
 
-.portfolio-card .card-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  text-align: center;
-  width: 100%;
-  transform: translate(-55%, -50%);
-  opacity: 0;
-  transition: var(--cubic-ease-out);
-  z-index: 1;
+.slider-item {
+  min-width: 100%;
+  scroll-snap-align: start;
 }
-
-.portfolio-card .card-text { color: var(--white); }
-
-.portfolio-card:is(:hover, :focus-within) .img-cover {
-  opacity: 0.1;
-  transform: scale(0.95);
-}
-
-.portfolio-card:is(:hover, :focus-within) .card-content {
-  transform: translate(-50%, -50%);
-  opacity: 1;
-}
-
 
 
 
@@ -1196,14 +1174,7 @@ textarea.input-field {
    * PROJECTS
    */
 
-
-
-
-
   .slider-item { min-width: calc(50% - 15px); }
-.section.project {
-  position: relative;
-}
 
 
 

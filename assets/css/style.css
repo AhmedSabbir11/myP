@@ -1196,82 +1196,6 @@ textarea.input-field {
    * PROJECTS
    */
 
-/* Existing styles */
-.section.project {
-  position: relative;
-}
-
-.slider-container {
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-
-.slider-list {
-  display: flex;
-  overflow: hidden;
-  scroll-behavior: smooth;
-}
-
-.slider-item {
-  min-width: 100%;
-  flex: 0 0 auto;
-}
-
-/* Carousel specific styles */
-.carousel {
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-}
-
-.carousel .list {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-
-.carousel .list .item {
-  min-width: 100%;
-  box-sizing: border-box;
-}
-
-.carousel .arrows {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  transform: translateY(-50%);
-}
-
-.carousel .arrows button {
-  background-color: rgba(0, 0, 0, 0.5);
-  border: none;
-  color: white;
-  padding: 10px;
-  cursor: pointer;
-}
-
-/* Other styles */
-.card-banner {
-  position: relative;
-}
-
-.img-holder {
-  position: relative;
-}
-
-.card-content {
-  padding: 20px;
-}
-
-.card-subtitle {
-  color: gray;
-}
-
-.title.h3 {
-  font-size: 1.5em;
-}
 
 
 /**
@@ -1281,42 +1205,6 @@ textarea.input-field {
   position: relative;
 }
 
-.slider-container {
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-
-.slider-list {
-  display: flex;
-  overflow: hidden;
-  scroll-behavior: smooth;
-}
-
-.slider-item {
-  min-width: 100%;
-  flex: 0 0 auto;
-}
-
-.slider-arrow {
-  background: none;
-  border: none;
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 1;
-  color: #333;
-  font-size: 2rem;
-}
-
-.slider-prev {
-  left: 0;
-}
-
-.slider-next {
-  right: 0;
-} */
 
 
   /**

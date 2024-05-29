@@ -368,7 +368,7 @@ body.nav-active { overflow: hidden; }
 .header_1 {
   position: absolute;
   top: 40px;
-  left: 60px;
+  left: 120px;
   width: 100%;
   padding-block: 20px;
   z-index: 4;

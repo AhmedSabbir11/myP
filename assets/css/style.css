@@ -357,8 +357,8 @@ body.nav-active { overflow: hidden; }
 
 .header {
   position: absolute;
-  top: 10px;
-  left: 20px;
+  top: 0;
+  left: 0;
   width: 100%;
   background-color: var(--bg-black);
   padding-block: 20px;
@@ -367,10 +367,9 @@ body.nav-active { overflow: hidden; }
 
 .header_1 {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 40px;
+  left: 60px;
   width: 100%;
-  background-color: var(--bg-black);
   padding-block: 20px;
   z-index: 4;
 }

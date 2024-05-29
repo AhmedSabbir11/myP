@@ -370,6 +370,7 @@ body.nav-active { overflow: hidden; }
   top: 0;
   left: 0;
   width: 100%;
+  background-color: var(--bg-black);
   padding-block: 20px;
   z-index: 4;
 }

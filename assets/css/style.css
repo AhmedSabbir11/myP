@@ -357,8 +357,8 @@ body.nav-active { overflow: hidden; }
 
 .header {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 10px;
+  left: 20px;
   width: 100%;
   background-color: var(--bg-black);
   padding-block: 20px;

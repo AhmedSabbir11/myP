@@ -163,4 +163,24 @@ addEventOnElements(hoveredElements, "mouseout", function () {
 
 /** tab scoll before to next */
 
+/**
+ * Auto-scroll for the project section
+ */
+const projectSection = document.querySelector(".section.project");
+let scrollAmount = 0;
+
+const autoScrollProjects = function () {
+  const maxScroll = projectSection.scrollHeight - projectSection.clientHeight;
+  scrollAmount += 2; // Adjust scroll speed here
+  if (scrollAmount >= maxScroll) {
+    scrollAmount = 0; // Reset scroll amount to loop
+  }
+  projectSection.scrollTo({
+    top: scrollAmount,
+    behavior: "smooth"
+  });
+};
+
+setInterval(autoScrollProjects, 100); // Adjust interval timing here
+
 

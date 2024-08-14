@@ -25,27 +25,22 @@
         }
 
         .scroll-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            margin-top: 100px; /* Space for header */
+            margin-top: 120px; /* Space for header */
             padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* 4 images per row */
+            grid-template-rows: repeat(2, 75vh); /* 2 rows */
+            gap: 40px;
             overflow-y: auto;
-            scroll-snap-type: y mandatory;
+            height: calc(100vh - 120px); /* Full height minus header */
         }
 
         .phone-frame {
-            width: 28%; /* Adjusts the size to fit 5 in a row */
-            max-width: 250px;
-            height: 55vh;
-            margin: 15px;
             display: flex;
             align-items: center;
             justify-content: center;
             position: relative;
-            scroll-snap-align: start;
-            transform: translateY(10vh);
+            transform: translateY(15vh);
             transition: transform 0.5s ease;
         }
 
@@ -65,6 +60,7 @@
 <header>
     <h1>Phone Screens Showcase</h1>
 </header>
+
 
 <div class="scroll-container">
     <div class="phone-frame">
@@ -112,7 +108,7 @@
     const observerOptions = {
         root: null,
         rootMargin: '0px',
-        threshold: 0.5
+        threshold: 0.1
     };
 
     const observer = new IntersectionObserver((entries, observer) => {

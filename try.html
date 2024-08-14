@@ -9,16 +9,16 @@
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            background-color: #F5F2E9; /* Matches the reference background */
+            background-color: #F5F2E9;
             overflow-x: hidden;
         }
 
         .scroll-container {
-            padding: 20px; /* General padding for spacing */
+            padding: 20px;
             display: grid;
-            grid-template-columns: repeat(4, 1fr); /* 4 columns for the images */
-            grid-template-rows: auto; /* Automatic row height */
-            gap: 30px; /* 30px gap between all frames */
+            grid-template-columns: repeat(4, 1fr);
+            grid-auto-rows: auto;
+            gap: 30px;
             overflow-y: auto;
             height: 100vh;
             position: relative;
@@ -29,25 +29,25 @@
             align-items: center;
             justify-content: center;
             position: relative;
+            height: auto;
             transition: transform 0.5s ease;
-            height: auto; /* Responsive height */
         }
 
-        /* Column specific positioning */
-        .phone-frame:nth-child(1) {
-            top: 120px;
+        /* Initial positioning for each column */
+        .phone-frame:nth-child(1), .phone-frame:nth-child(5), .phone-frame:nth-child(9) {
+            transform: translateY(120px);
         }
 
-        .phone-frame:nth-child(2) {
-            top: 80px;
+        .phone-frame:nth-child(2), .phone-frame:nth-child(6), .phone-frame:nth-child(10) {
+            transform: translateY(80px);
         }
 
-        .phone-frame:nth-child(3) {
-            top: 100px;
+        .phone-frame:nth-child(3), .phone-frame:nth-child(7), .phone-frame:nth-child(11) {
+            transform: translateY(100px);
         }
 
-        .phone-frame:nth-child(4) {
-            top: 70px;
+        .phone-frame:nth-child(4), .phone-frame:nth-child(8), .phone-frame:nth-child(12) {
+            transform: translateY(70px);
         }
 
         /* Responsive image sizing */
@@ -58,21 +58,29 @@
             box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
         }
 
-        /* Scroll effect: Adjust the positioning based on scroll */
-        .scroll-container.scroll-active .phone-frame:nth-child(1) {
-            transform: translateY(-20px);
+        /* Scroll effect for all images */
+        .scroll-container.scroll-active .phone-frame:nth-child(1), 
+        .scroll-container.scroll-active .phone-frame:nth-child(5),
+        .scroll-container.scroll-active .phone-frame:nth-child(9) {
+            transform: translateY(calc(120px - 20px));
         }
 
-        .scroll-container.scroll-active .phone-frame:nth-child(2) {
-            transform: translateY(20px);
+        .scroll-container.scroll-active .phone-frame:nth-child(2), 
+        .scroll-container.scroll-active .phone-frame:nth-child(6),
+        .scroll-container.scroll-active .phone-frame:nth-child(10) {
+            transform: translateY(calc(80px + 20px));
         }
 
-        .scroll-container.scroll-active .phone-frame:nth-child(3) {
-            transform: translateY(-20px);
+        .scroll-container.scroll-active .phone-frame:nth-child(3), 
+        .scroll-container.scroll-active .phone-frame:nth-child(7),
+        .scroll-container.scroll-active .phone-frame:nth-child(11) {
+            transform: translateY(calc(100px - 20px));
         }
 
-        .scroll-container.scroll-active .phone-frame:nth-child(4) {
-            transform: translateY(20px);
+        .scroll-container.scroll-active .phone-frame:nth-child(4), 
+        .scroll-container.scroll-active .phone-frame:nth-child(8),
+        .scroll-container.scroll-active .phone-frame:nth-child(12) {
+            transform: translateY(calc(70px + 20px));
         }
     </style>
 </head>

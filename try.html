@@ -13,26 +13,14 @@
             overflow-x: hidden;
         }
 
-        header {
-            width: 100%;
-            padding: 20px 0;
-            text-align: center;
-            background-color: #FFF;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            position: fixed;
-            top: 0;
-            z-index: 1000;
-        }
-
         .scroll-container {
-            margin-top: 120px; /* Space for header */
-            padding: 20px;
+            padding: 60px 20px 20px; /* Space from top for better view */
             display: grid;
             grid-template-columns: repeat(4, 1fr); /* 4 images per row */
-            grid-template-rows: repeat(2, 75vh); /* 2 rows */
+            grid-template-rows: repeat(2, 70vh); /* 2 rows */
             gap: 40px;
             overflow-y: auto;
-            height: calc(100vh - 120px); /* Full height minus header */
+            height: calc(100vh - 80px); /* Full height minus top padding */
         }
 
         .phone-frame {
@@ -42,10 +30,15 @@
             position: relative;
             transform: translateY(15vh);
             transition: transform 0.5s ease;
+            height: 90%; /* Resize screens by 10% smaller */
+        }
+
+        .phone-frame:nth-child(odd) {
+            transform: translateY(10vh); /* Higher starting position for columns 1 and 3 */
         }
 
         .phone-frame img {
-            width: 100%;
+            width: 90%; /* Resize image to be smaller by 10% */
             height: auto;
             box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
         }
@@ -56,7 +49,6 @@
     </style>
 </head>
 <body>
-
 
 <div class="scroll-container">
     <div class="phone-frame">
@@ -74,7 +66,6 @@
     <div class="phone-frame">
         <img src="./assets/images/screens/5.png" alt="Phone Frame 5">
     </div>
-
     <div class="phone-frame">
         <img src="./assets/images/screens/6.png" alt="Phone Frame 6">
     </div>
@@ -96,7 +87,6 @@
     <div class="phone-frame">
         <img src="./assets/images/screens/12.png" alt="Phone Frame 12">
     </div>
-    <!-- Add more phone-frame divs as needed -->
 </div>
 
 <script>

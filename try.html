@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Scrollable Phone Frames</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #F5F2E9; /* Matches the reference background */
+            overflow-x: hidden;
+        }
+
+        .scroll-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow-y: auto;
+            scroll-snap-type: y mandatory;
+        }
+
+        .phone-frame {
+            width: 100%;
+            max-width: 400px;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            scroll-snap-align: start;
+            transform: translateY(10vh);
+            transition: transform 0.5s ease;
+        }
+
+        .phone-frame img {
+            width: 100%;
+            height: auto;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .phone-frame.active {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+<div class="scroll-container">
+    <div class="phone-frame">
+        <img src="./assets/images/screens/1.png" alt="Phone Frame 1">
+    </div>
+    <div class="phone-frame">
+        <img src="./assets/images/screens/2.png" alt="Phone Frame 2">
+    </div>
+    <div class="phone-frame">
+        <img src="./assets/images/screens/3.png" alt="Phone Frame 3">
+    </div>
+    <div class="phone-frame">
+        <img src="./assets/images/screens/4.png" alt="Phone Frame 4">
+    </div>
+    <div class="phone-frame">
+        <img src="./assets/images/screens/5.png" alt="Phone Frame 5">
+    </div>
+
+    <div class="phone-frame">
+        <img src="./assets/images/screens/6.png" alt="Phone Frame 6">
+    </div>
+    <div class="phone-frame">
+        <img src="./assets/images/screens/7.png" alt="Phone Frame 7">
+    </div>
+    <div class="phone-frame">
+        <img src="./assets/images/screens/8.png" alt="Phone Frame 8">
+    </div>
+    <div class="phone-frame">
+        <img src="./assets/images/screens/9.png" alt="Phone Frame 9">
+    </div>
+    <div class="phone-frame">
+        <img src="./assets/images/screens/10.png" alt="Phone Frame 10">
+    </div>
+    <div class="phone-frame">
+        <img src="./assets/images/screens/11.png" alt="Phone Frame 11">
+    </div>
+    <div class="phone-frame">
+        <img src="./assets/images/screens/12.png" alt="Phone Frame 12">
+    </div>
+    <!-- Add more phone-frame divs as needed -->
+</div>
+
+<script>
+    const frames = document.querySelectorAll('.phone-frame');
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.5
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+            } else {
+                entry.target.classList.remove('active');
+            }
+        });
+    }, observerOptions);
+
+    frames.forEach(frame => {
+        observer.observe(frame);
+    });
+</script>
+
+</body>
+</html>

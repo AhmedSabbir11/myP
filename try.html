@@ -15,18 +15,19 @@
 
         .scroll-container {
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            flex-wrap: wrap;
             justify-content: center;
+            align-items: center;
             height: 100vh;
             overflow-y: auto;
             scroll-snap-type: y mandatory;
         }
 
         .phone-frame {
-            width: 100%;
-            max-width: 400px;
-            height: 100vh;
+            width: 45%; /* Adjusts the size of the phones */
+            max-width: 250px;
+            height: 45vh;
+            margin: 10px;
             display: flex;
             align-items: center;
             justify-content: center;

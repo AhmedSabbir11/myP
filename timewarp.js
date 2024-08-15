@@ -32,43 +32,6 @@ ScrollTrigger.refresh();
 loco()
 
 
-// -----------  Initialize Locomotive Scroll ----------
-const locoScroll = new LocomotiveScroll({
-    el: document.querySelector("#main"),
-    smooth: true
-});
-
-// Synchronize Locomotive Scroll with ScrollTrigger
-locoScroll.on("scroll", ScrollTrigger.update);
-
-ScrollTrigger.scrollerProxy("#main", {
-    scrollTop(value) {
-        return arguments.length ? locoScroll.scrollTo(value, 0, 0) : locoScroll.scroll.instance.scroll.y;
-    },
-    getBoundingClientRect() {
-        return {top: 0, left: 0, width: window.innerWidth, height: window.innerHeight};
-    },
-    pinType: document.querySelector("#main").style.transform ? "transform" : "fixed"
-});
-
-//   Activate header on scroll
-const header = document.querySelector("[data-header]");
-
-ScrollTrigger.create({
-    trigger: header,
-    start: "top -10%",
-    end: "bottom top",
-    onEnter: () => header.classList.add("active"),
-    onLeaveBack: () => header.classList.remove("active"),
-    scroller: "#main"
-});
-
-// Refresh ScrollTrigger and Locomotive Scroll
-ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
-ScrollTrigger.refresh();
-
-
-
 gsap.to("#page>video",{
     scrollTrigger:{
         trigger:`#page>video`,
@@ -80,8 +43,6 @@ gsap.to("#page>video",{
         document.querySelector("#page>video").play()
     }
 })
-
-// ----------  ---------------- ---------
 
 
 gsap.to("#page",{

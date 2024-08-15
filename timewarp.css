@@ -557,22 +557,80 @@ body {
     width: 100vw;
     background-color: #000;
 }
-#page20>video{
-    height: 100%;
+
+
+.scroll-container {
+    padding: 20px;
+    padding-bottom: 200px; /* Add bottom padding to match top space */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto;
+    gap: 30px;
+    overflow-y: auto;
+    height: 100vh;
+    position: relative;
+}
+
+.phone-frame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+
+/* Initial positioning for each column */
+.phone-frame:nth-child(1), .phone-frame:nth-child(5), .phone-frame:nth-child(9) {
+    transform: translateY(200px);
+}
+
+.phone-frame:nth-child(2), .phone-frame:nth-child(6), .phone-frame:nth-child(10) {
+    transform: translateY(80px);
+}
+
+.phone-frame:nth-child(3), .phone-frame:nth-child(7), .phone-frame:nth-child(11) {
+    transform: translateY(240px);
+}
+
+.phone-frame:nth-child(4), .phone-frame:nth-child(8), .phone-frame:nth-child(12) {
+    transform: translateY(120px);
+}
+
+/* Responsive image sizing */
+.phone-frame img {
     width: 100%;
-    object-fit: cover;
+    max-width: 90%;
+    height: auto;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 }
-#center-page20{
-    position: absolute;
-    height: 20%;
-    width: 20%;
-    bottom: 18%;
-    right: 5%;
-    color: #fff;
+
+/* Scroll effect for all images */
+.scroll-container.scroll-active .phone-frame:nth-child(1), 
+.scroll-container.scroll-active .phone-frame:nth-child(5),
+.scroll-container.scroll-active .phone-frame:nth-child(9) {
+    transform: translateY(calc(200px - 40px));
 }
-#center-page20>h1{
-    margin-bottom: 1.7vw;
+
+.scroll-container.scroll-active .phone-frame:nth-child(2), 
+.scroll-container.scroll-active .phone-frame:nth-child(6),
+.scroll-container.scroll-active .phone-frame:nth-child(10) {
+    transform: translateY(calc(80px + 40px));
 }
+
+.scroll-container.scroll-active .phone-frame:nth-child(3), 
+.scroll-container.scroll-active .phone-frame:nth-child(7),
+.scroll-container.scroll-active .phone-frame:nth-child(11) {
+    transform: translateY(calc(240px - 40px));
+}
+
+.scroll-container.scroll-active .phone-frame:nth-child(4), 
+.scroll-container.scroll-active .phone-frame:nth-child(8),
+.scroll-container.scroll-active .phone-frame:nth-child(12) {
+    transform: translateY(calc(120px + 40px));
+}
+
+
 #page21{
     position: relative;
     height: 100vh;

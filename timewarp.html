@@ -182,7 +182,57 @@
         <h5>"Dive into the core features with a preview of all the major app screens, giving you a comprehensive look at the seamless user experience that have been crafted."</h5>
        </div>
        <div id="page20">
-     
+        
+       <div class="scroll-container">
+    <div class="phone-frame">
+        <img src="./assets/images/screens/1.png" alt="Phone Frame 1">
+    </div>
+    <div class="phone-frame">
+        <img src="./assets/images/screens/2.png" alt="Phone Frame 2">
+    </div>
+    <div class="phone-frame">
+        <img src="./assets/images/screens/3.png" alt="Phone Frame 3">
+    </div>
+    <div class="phone-frame">
+        <img src="./assets/images/screens/4.png" alt="Phone Frame 4">
+    </div>
+    <div class="phone-frame">
+        <img src="./assets/images/screens/5.png" alt="Phone Frame 5">
+    </div>
+    <div class="phone-frame">
+        <img src="./assets/images/screens/6.png" alt="Phone Frame 6">
+    </div>
+    <div class="phone-frame">
+        <img src="./assets/images/screens/7.png" alt="Phone Frame 7">
+    </div>
+    <div class="phone-frame">
+        <img src="./assets/images/screens/8.png" alt="Phone Frame 8">
+    </div>
+    <div class="phone-frame">
+        <img src="./assets/images/screens/9.png" alt="Phone Frame 9">
+    </div>
+    <div class="phone-frame">
+        <img src="./assets/images/screens/10.png" alt="Phone Frame 10">
+    </div>
+    <div class="phone-frame">
+        <img src="./assets/images/screens/12.png" alt="Phone Frame 11">
+    </div>
+    <div class="phone-frame">
+        <img src="./assets/images/screens/12.png" alt="Phone Frame 12">
+    </div>
+</div>
+
+<script>
+    const scrollContainer = document.querySelector('.scroll-container');
+
+    scrollContainer.addEventListener('scroll', () => {
+        scrollContainer.classList.add('scroll-active');
+        clearTimeout(scrollContainer.scrollTimeout);
+        scrollContainer.scrollTimeout = setTimeout(() => {
+            scrollContainer.classList.remove('scroll-active');
+        }, 100);
+    });
+</script>
 
        </div>
     </div>

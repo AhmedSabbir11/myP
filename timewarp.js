@@ -28,6 +28,20 @@ ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
 ScrollTrigger.refresh();
 
+//___________________________________________________________________________________________
+// Activate header on scroll
+const header = document.querySelector("[data-header]");
+
+ScrollTrigger.create({
+    trigger: header,
+    start: "top -10%",
+    end: "bottom top",
+    onEnter: () => header.classList.add("active"),
+    onLeaveBack: () => header.classList.remove("active"),
+    scroller: "#main"
+});
+//___________________________________________________________________________________________
+
 }
 loco()
 

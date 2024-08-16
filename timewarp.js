@@ -466,7 +466,11 @@ var data = `
 ./assets/images/tw/f0.png
 ./assets/images/tw/f1.png
 ./assets/images/tw/f2.png
+./assets/images/tw/f2.png
+./assets/images/tw/f2.png
 ./assets/images/tw/f3.png
+./assets/images/tw/f3.png
+./assets/images/tw/f4.png
 ./assets/images/tw/f4.png
 ./assets/images/tw/f5.png
 ./assets/images/tw/f6.png
@@ -476,6 +480,9 @@ var data = `
 ./assets/images/tw/f10.png
 ./assets/images/tw/f11.png
 ./assets/images/tw/f12.png
+./assets/images/tw/f13.png
+./assets/images/tw/f13.png
+./assets/images/tw/f13.png
 ./assets/images/tw/f13.png
 ./assets/images/tw/f14.png
 ./assets/images/tw/f15.png
@@ -511,7 +518,7 @@ var data = `
 return data.split("\n")[index];
 }
 
-const frameCount = 43;
+const frameCount = 50;
 
 const images = [];
 const imageSeq = {

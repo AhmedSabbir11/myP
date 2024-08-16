@@ -463,36 +463,55 @@ render();
 
 function files(index) {
 var data = `
-.//Apple vision canvas images/Vision00001.png
-.//Apple vision canvas images/Vision00002.png
-.//Apple vision canvas images/Vision00003.png
-.//Apple vision canvas images/Vision00004.png
-.//Apple vision canvas images/Vision00005.png
-.//Apple vision canvas images/Vision00006.png
-.//Apple vision canvas images/Vision00007.png
-.//Apple vision canvas images/Vision00008.png
-.//Apple vision canvas images/Vision00009.png
-.//Apple vision canvas images/Vision00010.png
-.//Apple vision canvas images/Vision00011.png
-.//Apple vision canvas images/Vision00012.png
-.//Apple vision canvas images/Vision00013.png
-.//Apple vision canvas images/Vision00014.png
-.//Apple vision canvas images/Vision00015.png
-.//Apple vision canvas images/Vision00016.png
-.//Apple vision canvas images/Vision00017.png
-.//Apple vision canvas images/Vision00018.png
-.//Apple vision canvas images/Vision00019.png
-.//Apple vision canvas images/Vision00020.png
-.//Apple vision canvas images/Vision00021.png
-.//Apple vision canvas images/Vision00022.png
-.//Apple vision canvas images/Vision00023.png
-.//Apple vision canvas images/Vision00024.png
-.//Apple vision canvas images/Vision00025.png
+./assets/images/tw/f0.png
+./assets/images/tw/f1.png
+./assets/images/tw/f2.png
+./assets/images/tw/f3.png
+./assets/images/tw/f4.png
+./assets/images/tw/f5.png
+./assets/images/tw/f6.png
+./assets/images/tw/f7.png
+./assets/images/tw/f8.png
+./assets/images/tw/f9.png
+./assets/images/tw/f10.png
+./assets/images/tw/f11.png
+./assets/images/tw/f12.png
+./assets/images/tw/f13.png
+./assets/images/tw/f14.png
+./assets/images/tw/f15.png
+./assets/images/tw/f16.png
+./assets/images/tw/f17.png
+./assets/images/tw/f18.png
+./assets/images/tw/f19.png
+./assets/images/tw/f20.png
+./assets/images/tw/f21.png
+./assets/images/tw/f22.png
+./assets/images/tw/f23.png
+./assets/images/tw/f24.png
+./assets/images/tw/f25.png
+./assets/images/tw/f26.png
+./assets/images/tw/f27.png
+./assets/images/tw/f28.png
+./assets/images/tw/f29.png
+./assets/images/tw/f30.png
+./assets/images/tw/f31.png
+./assets/images/tw/f32.png
+./assets/images/tw/f33.png
+./assets/images/tw/f34.png
+./assets/images/tw/f35.png
+./assets/images/tw/f36.png
+./assets/images/tw/f37.png
+./assets/images/tw/f38.png
+./assets/images/tw/f39.png
+./assets/images/tw/f40.png
+./assets/images/tw/f41.png
+./assets/images/tw/f42.png
+
 `;
 return data.split("\n")[index];
 }
 
-const frameCount = 25;
+const frameCount = 43;
 
 const images = [];
 const imageSeq = {

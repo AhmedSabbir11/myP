@@ -1452,9 +1452,16 @@ textarea.input-field {
    */
 
 .progress-bar{
+
+       position: fixed;
+       top: 0;
+       left: 0;
+        width: 100%;
+       /* width: 0; */
 	height: 5px;
-	width: 0;
-	background-color: #6ebce3;
+        background-color: #6ebce3;
+        z-index: 1000; /* Ensure it's higher than the navbar */
+        transition: width 0.1s ease-out;
 }
 
   /**

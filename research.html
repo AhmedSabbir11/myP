@@ -1,81 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="research.css">
-	<title>On scroll progress bar</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Copy Checker</title>
+  <meta name="title" content="Sabbir Ahmed - Get your product identity from me.">
+  <meta name="description" content="All rights reserved by Sabbir Ahmed">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./Sa.svg" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/font/font.css">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/cc_styles.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/sabbir-banner.png">
+  <link rel="preload" as="image" href="./assets/images/1920.png">
+  <link rel="preload" as="image" href="./assets/images/c_oo.png">
+  <link rel="preload" as="image" href="./assets/images/cf_landing.png">
+
 </head>
-<body>
 
-	<div class="nav-wrapper">
-		<div class="progress-bar"></div>
-		<nav>
-			<a>Home</a>
-			<a>Products</a>
-			<a>About</a>
-			<a>Contact</a>
-		</nav>
-	</div>
+<body id="top">
+  <div class="preloader" data-preloader>
+    <span class="line"></span>
+  </div>
 
-<div class="content">
-	
-	<h2>Scroll down</h2>
 
-	<h3>Section 1</h3>
-	<p class="text">
-		Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam veritatis quibusdam sed. At natus distinctio doloribus perferendis, nemo dicta veritatis ullam a eos eligendi nobis magni corporis, temporibus porro, sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, qui quibusdam impedit esse ab molestiae temporibus voluptate culpa nemo debitis sed nostrum mollitia iusto earum. Repellendus perferendis, nihil dignissimos vitae accusantium consequuntur quidem, id. Ea accusantium dignissimos iste inventore odit? Consequuntur perspiciatis earum aliquid velit aut cumque! Incidunt, consectetur, neque.
-	</p>
+  <header class="header" data-header>
 
-	<p class="text">
-		Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam veritatis quibusdam sed. At natus distinctio doloribus perferendis, nemo dicta veritatis ullam a eos eligendi nobis magni corporis, temporibus porro, sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, qui quibusdam impedit esse ab molestiae temporibus voluptate culpa nemo debitis sed nostrum mollitia iusto earum. Repellendus perferendis, nihil dignissimos vitae accusantium consequuntur quidem, id. Ea accusantium dignissimos iste inventore odit? Consequuntur perspiciatis earum aliquid velit aut cumque! Incidunt, consectetur, neque.
-	</p>
+  <!-- 
+    - Progress bar
+  -->
+  <div class="progress-bar"></div> 
 
-	<p class="text">
-		Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam veritatis quibusdam sed. At natus distinctio doloribus perferendis, nemo dicta veritatis ullam a eos eligendi nobis magni corporis, temporibus porro, sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, qui quibusdam impedit esse ab molestiae temporibus voluptate culpa nemo debitis sed nostrum mollitia iusto earum. Repellendus perferendis, nihil dignissimos vitae accusantium consequuntur quidem, id. Ea accusantium dignissimos iste inventore odit? Consequuntur perspiciatis earum aliquid velit aut cumque! Incidunt, consectetur, neque.
-	</p>
-<h3>Section 2</h3>
-	<p class="text">
-		Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam veritatis quibusdam sed. At natus distinctio doloribus perferendis, nemo dicta veritatis ullam a eos eligendi nobis magni corporis, temporibus porro, sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, qui quibusdam impedit esse ab molestiae temporibus voluptate culpa nemo debitis sed nostrum mollitia iusto earum. Repellendus perferendis, nihil dignissimos vitae accusantium consequuntur quidem, id. Ea accusantium dignissimos iste inventore odit? Consequuntur perspiciatis earum aliquid velit aut cumque! Incidunt, consectetur, neque.
-	</p>
 
-	<p class="text">
-		Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam veritatis quibusdam sed. At natus distinctio doloribus perferendis, nemo dicta veritatis ullam a eos eligendi nobis magni corporis, temporibus porro, sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, qui quibusdam impedit esse ab molestiae temporibus voluptate culpa nemo debitis sed nostrum mollitia iusto earum. Repellendus perferendis, nihil dignissimos vitae accusantium consequuntur quidem, id. Ea accusantium dignissimos iste inventore odit? Consequuntur perspiciatis earum aliquid velit aut cumque! Incidunt, consectetur, neque.
-	</p>
 
-	<p class="text">
-		Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam veritatis quibusdam sed. At natus distinctio doloribus perferendis, nemo dicta veritatis ullam a eos eligendi nobis magni corporis, temporibus porro, sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, qui quibusdam impedit esse ab molestiae temporibus voluptate culpa nemo debitis sed nostrum mollitia iusto earum. Repellendus perferendis, nihil dignissimos vitae accusantium consequuntur quidem, id. Ea accusantium dignissimos iste inventore odit? Consequuntur perspiciatis earum aliquid velit aut cumque! Incidunt, consectetur, neque.
-	</p>
-<h3>Section 3</h3>
-	<p class="text">
-		Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam veritatis quibusdam sed. At natus distinctio doloribus perferendis, nemo dicta veritatis ullam a eos eligendi nobis magni corporis, temporibus porro, sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, qui quibusdam impedit esse ab molestiae temporibus voluptate culpa nemo debitis sed nostrum mollitia iusto earum. Repellendus perferendis, nihil dignissimos vitae accusantium consequuntur quidem, id. Ea accusantium dignissimos iste inventore odit? Consequuntur perspiciatis earum aliquid velit aut cumque! Incidunt, consectetur, neque.
-	</p>
+    <div class="container">
 
-	<p class="text">
-		Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam veritatis quibusdam sed. At natus distinctio doloribus perferendis, nemo dicta veritatis ullam a eos eligendi nobis magni corporis, temporibus porro, sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, qui quibusdam impedit esse ab molestiae temporibus voluptate culpa nemo debitis sed nostrum mollitia iusto earum. Repellendus perferendis, nihil dignissimos vitae accusantium consequuntur quidem, id. Ea accusantium dignissimos iste inventore odit? Consequuntur perspiciatis earum aliquid velit aut cumque! Incidunt, consectetur, neque.
-	</p>
+      <a href="#" class="logo">
+        <img src="./assets/images/logo_S.svg" width="102" height="27" alt="logo">
+      </a>
 
-	<p class="text">
-		Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam veritatis quibusdam sed. At natus distinctio doloribus perferendis, nemo dicta veritatis ullam a eos eligendi nobis magni corporis, temporibus porro, sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, qui quibusdam impedit esse ab molestiae temporibus voluptate culpa nemo debitis sed nostrum mollitia iusto earum. Repellendus perferendis, nihil dignissimos vitae accusantium consequuntur quidem, id. Ea accusantium dignissimos iste inventore odit? Consequuntur perspiciatis earum aliquid velit aut cumque! Incidunt, consectetur, neque.
-	</p>
-<h3>Section 4</h3>
-	<p class="text">
-		Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam veritatis quibusdam sed. At natus distinctio doloribus perferendis, nemo dicta veritatis ullam a eos eligendi nobis magni corporis, temporibus porro, sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, qui quibusdam impedit esse ab molestiae temporibus voluptate culpa nemo debitis sed nostrum mollitia iusto earum. Repellendus perferendis, nihil dignissimos vitae accusantium consequuntur quidem, id. Ea accusantium dignissimos iste inventore odit? Consequuntur perspiciatis earum aliquid velit aut cumque! Incidunt, consectetur, neque.
-	</p>
+      <nav class="navbar" data-navbar>
+    
 
-	<p class="text">
-		Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam veritatis quibusdam sed. At natus distinctio doloribus perferendis, nemo dicta veritatis ullam a eos eligendi nobis magni corporis, temporibus porro, sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, qui quibusdam impedit esse ab molestiae temporibus voluptate culpa nemo debitis sed nostrum mollitia iusto earum. Repellendus perferendis, nihil dignissimos vitae accusantium consequuntur quidem, id. Ea accusantium dignissimos iste inventore odit? Consequuntur perspiciatis earum aliquid velit aut cumque! Incidunt, consectetur, neque.
-	</p>
+        <div class="navbar-top">
+          <a href="#" class="logo">
+            <img src="./assets/images/logo_S.svg" width="102" height="27" alt="logo">
+          </a>
 
-	<p class="text">
-		Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam veritatis quibusdam sed. At natus distinctio doloribus perferendis, nemo dicta veritatis ullam a eos eligendi nobis magni corporis, temporibus porro, sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, qui quibusdam impedit esse ab molestiae temporibus voluptate culpa nemo debitis sed nostrum mollitia iusto earum. Repellendus perferendis, nihil dignissimos vitae accusantium consequuntur quidem, id. Ea accusantium dignissimos iste inventore odit? Consequuntur perspiciatis earum aliquid velit aut cumque! Incidunt, consectetur, neque.
-	</p>
-<h3>Last words</h3>
-	<p class="text">
-		Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam veritatis quibusdam sed. At natus distinctio doloribus perferendis, nemo dicta veritatis ullam a eos eligendi nobis magni corporis, temporibus porro, sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, qui quibusdam impedit esse ab molestiae temporibus voluptate culpa nemo debitis sed nostrum mollitia iusto earum. Repellendus perferendis, nihil dignissimos vitae accusantium consequuntur quidem, id. Ea accusantium dignissimos iste inventore odit? Consequuntur perspiciatis earum aliquid velit aut cumque! Incidunt, consectetur, neque.
-	</p>
-</div>
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
 
-	<script src="research.js"></script> 
+
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link" data-nav-link>About</a>
+          </li>
+
+          <li>
+            <a href="https://ahmedsabbir11.github.io/myP/page1" class="navbar-link" data-nav-link>Published Projects</a>
+          </li>
+
+          <li>
+            <a href="#review" class="navbar-link" data-nav-link>Researches</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <button class="nav-open-btn btn:hover" aria-label="open menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+      </button>
+
+      <div class="overlay" data-overlay data-nav-toggler></div>
+
+    </div>
+  </header>
+    
+
+ 
+
+
+  <main>
+ <!-- 
+     <div class="image-container">
+        <img src="./assets/images/1920.png" alt="Responsive Image">
+        <img src="./assets/images/cf_landing.gif" alt="Responsive Image">
+        <img src="./assets/images/c_oo.png" alt="Responsive Image">
+        <img src="./assets/images/c.gif" alt="Responsive Image">
+
+    </div>   -->
+
+  </main>
+    
+
+
+
+  <!-- 
+    - #CUSTOM CURSOR
+  -->
+
+  <div class="cursor-dot" data-cursor></div>
+  <div class="cursor-outline" data-cursor></div>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
+
 </html>

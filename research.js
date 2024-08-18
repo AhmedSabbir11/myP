@@ -46,6 +46,7 @@ navTogglers.forEach(toggler => {
   });
 });
 
+
 overlay.addEventListener("click", () => {
   navbar.classList.remove("active");
   overlay.classList.remove("active");

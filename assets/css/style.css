@@ -813,9 +813,10 @@ body.nav-active { overflow: hidden; }
   display: flex;
   align-items: flex-start;
   gap: 30px;
-  overflow: auto;
+  overflow: hidden;
   scroll-snap-type: inline mandatory;
-  padding-block-end: 5px;
+   scroll-behavior: smooth;
+   padding-block-end: 5px;
 }
 
 .slider-list::-webkit-scrollbar { display: none; }
@@ -825,6 +826,11 @@ body.nav-active { overflow: hidden; }
   scroll-snap-align: start;
 }
 
+
+.slider-list li {
+  flex: 0 0 33.33%; /* Adjust the width according to the number of items visible at a time */
+  max-width: 33.33%;
+}
 
 
 

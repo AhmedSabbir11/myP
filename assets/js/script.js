@@ -166,22 +166,22 @@ addEventOnElements(hoveredElements, "mouseout", function () {
 /**
  * Auto-scroll for the project section
  */
-const projectSection = document.querySelector(".section.project");
-let scrollAmount = 0;
+const projectSection = document.querySelector(".slider-list");
 
 const autoScrollProjects = function () {
-  const maxScroll = projectSection.scrollHeight - projectSection.clientHeight;
-  scrollAmount += 2; // Adjust scroll speed here
-  if (scrollAmount >= maxScroll) {
-    scrollAmount = 0; // Reset scroll amount to loop
-  }
-  projectSection.scrollTo({
-    top: scrollAmount,
+  projectSection.scrollBy({
+    top: 0,
+    left: 2, // Adjust scroll speed here
     behavior: "smooth"
   });
+
+  if (projectSection.scrollLeft >= projectSection.scrollWidth - projectSection.clientWidth) {
+    projectSection.scrollLeft = 0;
+  }
 };
 
-setInterval(autoScrollProjects, 100); // Adjust interval timing here
+setInterval(autoScrollProjects, 30); // Adjust interval timing here
+
 
 
 

@@ -167,20 +167,30 @@ addEventOnElements(hoveredElements, "mouseout", function () {
  * Auto-scroll for the project section
  */
 const projectSection = document.querySelector(".slider-list");
+let clone;
 
-const autoScrollProjects = function () {
-  projectSection.scrollBy({
-    top: 0,
-    left: 2, // Adjust scroll speed here
-    behavior: "smooth"
-  });
+const infiniteScroll = () => {
+  clone = projectSection.innerHTML + projectSection.innerHTML; // Duplicate the content
+  projectSection.innerHTML = clone;
 
-  if (projectSection.scrollLeft >= projectSection.scrollWidth - projectSection.clientWidth) {
-    projectSection.scrollLeft = 0;
-  }
+  let startPosition = 0;
+
+  const scroll = () => {
+    startPosition++;
+    projectSection.scrollTo(startPosition, 0);
+
+    if (startPosition >= projectSection.scrollWidth / 2) {
+      startPosition = 0; // Reset scroll position to create an infinite loop
+    }
+
+    requestAnimationFrame(scroll);
+  };
+
+  scroll();
 };
 
-setInterval(autoScrollProjects, 30); // Adjust interval timing here
+window.onload = infiniteScroll;
+
 
 
 
